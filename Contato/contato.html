@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Contato - Barbearia Alura
     </title>
     <link rel="stylesheet" href="../reset.css">
@@ -11,7 +12,7 @@
 
 <header>
     <div class="caixa">
-        <h1><img src="../Produtos/logo.png" alt=""></h1>
+        <h1><img src="../Produtos/logo.png" alt="Logo da Barbearia Alura"></h1>
         <nav>
             <ul>
                 <li><a href="../Home/Index.html">Home</a></li>
@@ -36,42 +37,68 @@
         <label for="mensagem">Mensagem</label>
         <textarea name="" id="mensagem" cols="60" rows="10" class="inputpadrao"></textarea>
 
-        <div>
-            <p>Como prefere nosso contato?</p>
+        <fieldset>
+            <legend>Como prefere nosso contato?</legend>
             <label for="radio-email">
                 <input type="radio" name="contato" id="radio-email" value="email">
                 Email
             </label>
-            
+
 
             <label for="radio-telefone">
                 <input type="radio" name="contato" id="radio-telefone" value="telefone">
                 Telefone
             </label>
-            
+
 
             <label for="radio-whatsapp">
                 <input type="radio" name="contato" id="radio-whatsapp" checked value="whatsapp">
                 WhatsApp
             </label>
-            
-        </div>
 
-        <p>Qual horario prefere ser atendido</p>
-        <select>
-            <option>Manha</option>
-            <option>Tarde</option>
-            <option>Noite</option>
-        </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Qual horario prefere ser atendido</legend>
+            <select>
+                <option>Manha</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+            </select>
+        </fieldset>
 
         <label class="checkbox" for=""><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
 
-        <input type="submit" value="Enviar Fromulario" required>
+        <input type="submit" value="Enviar Fromulario" required class="enviar">
     </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Dia</th>
+                <th>Horario</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Segunda</td>
+                <td>8h - 20h</td>
+            </tr>
+            <tr>
+                <td>Quarta</td>
+                <td>8h - 20h</td>
+            </tr>
+            <tr>
+                <td>Sexta</td>
+                <td>8h - 20h</td>
+            </tr>
+        </tbody>
+    </table>
 </main>
 
 <footer>
-    <img src="../Produtos/logo-branco.png" alt="">
+    <img src="../Produtos/logo-branco.png" alt="Logo da Barbearia Alura">
     <p class="copyright">&copy; Copyright Barbearya Alura - 2022</p>
 </footer>
 

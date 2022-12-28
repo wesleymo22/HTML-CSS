@@ -94,3 +94,23 @@ footer{
     font-size: 13px;
     margin: 20px 0;
 }
+
+@media screen and (max-width: 480px){
+    .caixa, .principal, .produtos{
+        width: auto;
+    }
+    
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .produtos li{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
